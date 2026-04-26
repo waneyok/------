@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+:root {
+  /* Цветовые схемы */
+  --accent-color: #607ce6;
+  --dark-color: #333333;
+  --light-color: #ffffff;
+  --third-color: #d9d9d9;
+  --gray-color: #888888;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 32px;
+}
+
+header .info {
+  display: block;
+  float: right;
+  padding-right: 20px;
+  position: relative;
+}
+
+header .info span {
+  display: block;
+  float: right;
+  position: relative;
+}
+
+header .info-next {
+  display: block;
+  float: right;
+  position: relative;
+}
+
+header .info-next span {
+  display: block;
+  float: right;
+  position: relative;
+}
+
+#logo {
+  width: 200px;
+}
