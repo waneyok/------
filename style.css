@@ -16,14 +16,21 @@
 body {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 16px;
+  color: var(--dark-color);
+  font-style: normal;
 }
 
 a {
   text-decoration: none;
+  color: var(--dark-color);
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
+}
+
+#logo {
+  width: 200px;
 }
 
 .wrapper {
@@ -37,6 +44,7 @@ img {
 
 header {
   padding: 32px;
+  width: 1180px;
 }
 
 header .info {
@@ -44,26 +52,78 @@ header .info {
   float: right;
   padding-right: 20px;
   position: relative;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-header .info span {
+header .info a {
   display: block;
   float: right;
   position: relative;
+  color: var(--accent-color);
 }
 
 header .info-next {
   display: block;
   float: right;
   position: relative;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-header .info-next span {
+header .info-next a {
   display: block;
   float: right;
   position: relative;
+  color: var(--accent-color);
+}
+hr {
+  margin-top: 35px;
+  margin-bottom: 16px;
+  color: #888888;
 }
 
-#logo {
-  width: 200px;
+.nav li {
+  list-style: none;
+  display: inline;
+  font-weight: 400;
+  padding-right: 45px;
+}
+
+.nav ul .call-back {
+  float: right;
+}
+
+.nav ul .call-back span {
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.nav ul .call-back img {
+  position: relative;
+  vertical-align: middle;
+  width: 16px;
+}
+
+.hero-text {
+  display: flex;
+  align-items: baseline;
+}
+
+.hero-text h1 {
+  width: 580px;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 60px;
+}
+
+.hero-text p {
+  padding-left: 150px;
+  width: 379px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.hero img {
+  margin-top: 32px;
 }
