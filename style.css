@@ -13,6 +13,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 16px;
@@ -105,6 +109,10 @@ hr {
   width: 16px;
 }
 
+.nav a {
+  transition: color 0.3s ease;
+}
+
 .hero-text {
   display: flex;
   align-items: baseline;
@@ -115,6 +123,7 @@ hr {
   font-weight: 700;
   font-style: bold;
   font-size: 60px;
+  color: var(--dark-color);
 }
 
 .hero-text p {
@@ -122,8 +131,61 @@ hr {
   width: 379px;
   font-size: 18px;
   font-weight: 400;
+  color: var(--dark-color);
 }
 
 .hero img {
   margin-top: 32px;
+}
+
+.about {
+  margin-top: 35px;
+}
+
+.about h1 {
+  color: var(--dark-color);
+  font-size: 48px;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.atxt-info {
+  margin-top: 32px;
+  display: flex;
+  gap: 20px;
+}
+
+.atxt-info p {
+  width: 580px;
+  font-size: 18px;
+  font-weight: 400;
+  flex: 1;
+}
+
+.about img {
+  margin-top: 32px;
+  height: 280px;
+  display: inline;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;       /* по вертикали по центру */
+  justify-content: space-between; /* первая слева, вторая справа */
+  gap: 20px;                 /* расстояние между картинками */
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .atxt-info {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about-item {
+    border-right: none;
+    padding-right: 0;
+  }
 }
